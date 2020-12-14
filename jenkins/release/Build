@@ -1,0 +1,5 @@
+@Library('reanplatform') _
+
+node {
+  gemPipelines.releaseBuild(name: 'awesome_gem')
+}

@@ -1,0 +1,7 @@
+@Library('reanplatform') _
+
+node {
+  currentBuild.displayName = "#${currentBuild.id} (on ${params.branch})"
+
+  gemPipelines.test(name: 'awesome_gem')
+}
